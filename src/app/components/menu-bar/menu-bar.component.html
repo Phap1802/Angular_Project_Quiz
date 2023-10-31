@@ -1,0 +1,29 @@
+<div class="container__menu-bar">
+    <div class="content__menu-bar">
+        
+        <div class="mobile__menu-bar" (click)="toggleNavbar()">
+            <div class="line 1"></div>
+            <div class="line 2"></div>
+            <div class="line 3"></div>
+        </div>
+        <div class="links__menu-bar" [class.active]="navbarOpen">
+            <button class="close-button" *ngIf="navbarOpen" (click)="toggleNavbar()">Fechar Menu</button>
+            <ul>                 
+                <li class="box_li"><a href="https://www.linkedin.com/in/pauloalmeidapinto/">Linkedin</a></li>
+                <li><span>•</span></li>
+                <li class="box_li"><a href="https://github.com/Phap1802">Github</a></li>
+                <li><span>•</span></li>
+                <li class="box_li"><a href="https://phap1802.github.io/myCV/">My Curriculum</a></li>
+            </ul>
+        </div> 
+        <div class="links2__menu-bar" [class.active]="navbarOpen">
+            <ul>                
+                <li class=""><a href="https://www.linkedin.com/in/pauloalmeidapinto/">Linkedin</a></li>
+                <li><span>•</span></li>
+                <li class=""><a href="https://github.com/Phap1802">Github</a></li>
+                <li><span>•</span></li>
+                <li class=""><a href="https://phap1802.github.io/myCV/">My Curriculum</a></li>
+            </ul>
+        </div>       
+    </div>
+</div>
